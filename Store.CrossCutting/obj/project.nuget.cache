@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "p/HJs58jNQ8=",
+  "success": true,
+  "projectFilePath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.entityframeworkcore\\11.0.0\\microsoft.entityframeworkcore.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\11.0.0\\microsoft.entityframeworkcore.abstractions.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\11.0.0\\microsoft.entityframeworkcore.analyzers.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.extensions.caching.memory\\11.0.0\\microsoft.extensions.caching.memory.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\11.0.0\\microsoft.extensions.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.extensions.logging\\11.0.0\\microsoft.extensions.logging.11.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

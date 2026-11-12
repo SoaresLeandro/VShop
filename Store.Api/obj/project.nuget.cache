@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "PmXwPLJzWPE=",
+  "success": true,
+  "projectFilePath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.aspnetcore.openapi\\11.0.0\\microsoft.aspnetcore.openapi.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.entityframeworkcore\\11.0.0\\microsoft.entityframeworkcore.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\11.0.0\\microsoft.entityframeworkcore.abstractions.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\11.0.0\\microsoft.entityframeworkcore.analyzers.11.0.0.nupkg.sha512",
+    "C:\\Users\\lsilva\\.nuget\\packages\\microsoft.openapi\\3.11.0\\microsoft.openapi.3.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}
