@@ -127,7 +127,7 @@ C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\jsmodules\jsmodules.b
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\scopedcss\scopedcss.cache
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\scopedcss\bundle\Store.Api.styles.css
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\6eiem8wqjk-{0}-tchfgznwy8-tchfgznwy8.gz
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\4u2mf0fsfj-{0}-mmhj29g4p0-mmhj29g4p0.gz
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\4u2mf0fsfj-{0}-9dh741kyab-9dh741kyab.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\3jaidz66t4-{0}-v1vy2to33n-v1vy2to33n.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\418535rxj1-{0}-ysew0n4kjn-ysew0n4kjn.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\staticwebassets.build.json

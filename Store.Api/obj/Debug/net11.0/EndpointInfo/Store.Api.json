@@ -13,10 +13,10 @@
     }
   ],
   "paths": {
-    "/api/Category": {
+    "/api/Categories": {
       "get": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "responses": {
           "200": {
@@ -52,7 +52,7 @@
       },
       "post": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "requestBody": {
           "content": {
@@ -98,10 +98,10 @@
         }
       }
     },
-    "/api/Category/products": {
+    "/api/Categories/products": {
       "get": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "responses": {
           "200": {
@@ -136,10 +136,10 @@
         }
       }
     },
-    "/api/Category/{id}": {
+    "/api/Categories/{id}": {
       "get": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "operationId": "GetCategory",
         "parameters": [
@@ -179,7 +179,7 @@
       },
       "put": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "parameters": [
           {
@@ -241,7 +241,7 @@
       },
       "delete": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "parameters": [
           {
@@ -282,10 +282,10 @@
         }
       }
     },
-    "/api/Product": {
+    "/api/Products": {
       "get": {
         "tags": [
-          "Product"
+          "Products"
         ],
         "responses": {
           "200": {
@@ -321,7 +321,7 @@
       },
       "post": {
         "tags": [
-          "Product"
+          "Products"
         ],
         "requestBody": {
           "content": {
@@ -367,10 +367,10 @@
         }
       }
     },
-    "/api/Product/{id}": {
+    "/api/Products/{id}": {
       "get": {
         "tags": [
-          "Product"
+          "Products"
         ],
         "operationId": "GetProduct",
         "parameters": [
@@ -410,7 +410,7 @@
       },
       "put": {
         "tags": [
-          "Product"
+          "Products"
         ],
         "parameters": [
           {
@@ -472,7 +472,7 @@
       },
       "delete": {
         "tags": [
-          "Product"
+          "Products"
         ],
         "parameters": [
           {
@@ -675,10 +675,10 @@
   },
   "tags": [
     {
-      "name": "Category"
+      "name": "Categories"
     },
     {
-      "name": "Product"
+      "name": "Products"
     }
   ]
 }

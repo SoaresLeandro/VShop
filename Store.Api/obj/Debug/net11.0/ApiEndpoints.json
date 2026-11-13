@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "Store.Api.Controllers.CategoryController",
+    "ContainingType": "Store.Api.Controllers.CategoriesController",
     "Method": "Get",
-    "RelativePath": "api/Category",
+    "RelativePath": "api/Categories",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,9 +20,9 @@
     ]
   },
   {
-    "ContainingType": "Store.Api.Controllers.CategoryController",
+    "ContainingType": "Store.Api.Controllers.CategoriesController",
     "Method": "Post",
-    "RelativePath": "api/Category",
+    "RelativePath": "api/Categories",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "Store.Api.Controllers.CategoryController",
+    "ContainingType": "Store.Api.Controllers.CategoriesController",
     "Method": "Get",
-    "RelativePath": "api/Category/{id}",
+    "RelativePath": "api/Categories/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -73,9 +73,9 @@
     "EndpointName": "GetCategory"
   },
   {
-    "ContainingType": "Store.Api.Controllers.CategoryController",
+    "ContainingType": "Store.Api.Controllers.CategoriesController",
     "Method": "Put",
-    "RelativePath": "api/Category/{id}",
+    "RelativePath": "api/Categories/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -104,9 +104,9 @@
     ]
   },
   {
-    "ContainingType": "Store.Api.Controllers.CategoryController",
+    "ContainingType": "Store.Api.Controllers.CategoriesController",
     "Method": "Delete",
-    "RelativePath": "api/Category/{id}",
+    "RelativePath": "api/Categories/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -130,9 +130,9 @@
     ]
   },
   {
-    "ContainingType": "Store.Api.Controllers.CategoryController",
+    "ContainingType": "Store.Api.Controllers.CategoriesController",
     "Method": "GetWithProducts",
-    "RelativePath": "api/Category/products",
+    "RelativePath": "api/Categories/products",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -150,9 +150,9 @@
     ]
   },
   {
-    "ContainingType": "Store.Api.Controllers.ProductController",
+    "ContainingType": "Store.Api.Controllers.ProductsController",
     "Method": "Get",
-    "RelativePath": "api/Product",
+    "RelativePath": "api/Products",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -170,9 +170,9 @@
     ]
   },
   {
-    "ContainingType": "Store.Api.Controllers.ProductController",
+    "ContainingType": "Store.Api.Controllers.ProductsController",
     "Method": "Post",
-    "RelativePath": "api/Product",
+    "RelativePath": "api/Products",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -196,9 +196,9 @@
     ]
   },
   {
-    "ContainingType": "Store.Api.Controllers.ProductController",
+    "ContainingType": "Store.Api.Controllers.ProductsController",
     "Method": "Get",
-    "RelativePath": "api/Product/{id}",
+    "RelativePath": "api/Products/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -223,9 +223,9 @@
     "EndpointName": "GetProduct"
   },
   {
-    "ContainingType": "Store.Api.Controllers.ProductController",
+    "ContainingType": "Store.Api.Controllers.ProductsController",
     "Method": "Put",
-    "RelativePath": "api/Product/{id}",
+    "RelativePath": "api/Products/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -254,9 +254,9 @@
     ]
   },
   {
-    "ContainingType": "Store.Api.Controllers.ProductController",
+    "ContainingType": "Store.Api.Controllers.ProductsController",
     "Method": "Delete",
-    "RelativePath": "api/Product/{id}",
+    "RelativePath": "api/Products/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
