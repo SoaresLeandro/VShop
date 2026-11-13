@@ -1,0 +1,16 @@
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\bin\Debug\net11.0\Store.Application.deps.json
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\bin\Debug\net11.0\Store.Application.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\bin\Debug\net11.0\Store.Application.pdb
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\bin\Debug\net11.0\Store.Domain.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\bin\Debug\net11.0\Store.Domain.pdb
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Application.csproj.AssemblyReference.cache
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Application.AssemblyInfoInputs.cache
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Application.AssemblyInfo.cs
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Application.csproj.CoreCompileInputs.cache
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Application.sourcelink.json
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Ap.C122FA30.Up2Date
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Application.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\refint\Store.Application.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\Store.Application.pdb
+C:\Leandro\Lab\Macoratti\VShop\Store.Application\obj\Debug\net11.0\ref\Store.Application.dll
