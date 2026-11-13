@@ -2,7 +2,7 @@
 
 namespace Store.Domain.Interfaces.Repositories
 {
-    public interface IProductCategory : IRepository<Product>
+    public interface IProductRepository : IRepository<Product>
     {
     }
 }

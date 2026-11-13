@@ -4,7 +4,7 @@ using Store.Infrastructure.Context;
 
 namespace Store.Infrastructure.Repositories
 {
-    public class ProductRepository : Repository<Product>, IProductCategory
+    public class ProductRepository : Repository<Product>, IProductRepository
     {
         public ProductRepository(AppDbContext appDbContext) : base(appDbContext)
         {
