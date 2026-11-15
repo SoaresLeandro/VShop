@@ -531,6 +531,22 @@
           }
         }
       },
+      "Swashbuckle.AspNetCore.SwaggerUI/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.CodeDom/6.0.0": {
         "type": "package",
         "compile": {
@@ -1914,6 +1930,24 @@
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
+    "Swashbuckle.AspNetCore.SwaggerUI/11.0.1": {
+      "sha512": "Mu0j015xm7W/Axz6J6bXrh+/qEiyUGQUIGrWWvivv732yO1LtnmyV3zRwWB1dOFvlrU/CWUZqIYe1+hIcsCacg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/11.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "package-readme.md",
+        "swashbuckle.aspnetcore.swaggerui.11.0.1.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
+      ]
+    },
     "System.CodeDom/6.0.0": {
       "sha512": "CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
       "type": "package",
@@ -2119,27 +2153,28 @@
     "net11.0": [
       "Microsoft.AspNetCore.OpenApi >= 11.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
-      "Store.CrossCutting >= 1.0.0"
+      "Store.CrossCutting >= 1.0.0",
+      "Swashbuckle.AspNetCore.SwaggerUI >= 11.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lsilva\\.nuget\\packages\\": {},
+    "C:\\Users\\Leandro\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\Store.Api.csproj",
       "projectName": "Store.Api",
-      "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj",
-      "packagesPath": "C:\\Users\\lsilva\\.nuget\\packages\\",
-      "outputPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\obj\\",
+      "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\Store.Api.csproj",
+      "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2155,8 +2190,8 @@
           "framework": "net11.0",
           "targetAlias": "net11.0",
           "projectReferences": {
-            "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj": {
-              "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj"
+            "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj": {
+              "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj"
             }
           }
         }
@@ -2187,6 +2222,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.0, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerUI": {
+            "target": "Package",
+            "version": "[11.0.1, )"
           }
         },
         "imports": [

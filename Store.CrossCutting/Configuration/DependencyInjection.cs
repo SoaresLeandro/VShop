@@ -29,8 +29,8 @@ namespace Store.CrossCutting.Configuration
             services.AddScoped<IProductService, ProductService>();
 
             //Mappings
-            services.AddScoped(typeof(CategoryProfile));
-            services.AddScoped(typeof(ProductProfile));
+            services.AddScoped<CategoryProfile>();
+            services.AddScoped<ProductProfile>();
 
             return services;
         }

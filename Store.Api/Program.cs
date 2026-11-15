@@ -18,6 +18,9 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+
+    app.UseSwaggerUI(options => 
+    options.SwaggerEndpoint("/swagger/v1.json", "VShop"));
 }
 
 app.UseHttpsRedirection();

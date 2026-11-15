@@ -52,7 +52,7 @@ namespace Store.Api.Controllers
             return new CreatedAtRouteResult("GetProduct", new { productDTO });
         }
 
-        [HttpPut("{id: int}")]
+        [HttpPut("{id:int}")]
         public async Task<ActionResult<ProductDTO>> Put(int id, ProductDTO productDTO)
         {
             if (!productDTO.Id.Equals(id))
@@ -69,7 +69,7 @@ namespace Store.Api.Controllers
             return new CreatedAtRouteResult("GetProduct", new { productDTO });
         }
 
-        [HttpDelete("{id: int}")]
+        [HttpDelete("{id:int}")]
         public async Task<ActionResult<ProductDTO>> Delete(int id)
         {
             await _productService.RemoveProduct(id);

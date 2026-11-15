@@ -62,7 +62,7 @@ namespace Store.Api.Controllers
             return new CreatedAtRouteResult("GetCategory", new { categoryDto });
         }
 
-        [HttpPut("{id: int}")]
+        [HttpPut("{id:int}")]
         public async Task<ActionResult<CategoryDTO>> Put(int id, CategoryDTO categoryDTO)
         {
             if (!categoryDTO.Id.Equals(id))
@@ -79,7 +79,7 @@ namespace Store.Api.Controllers
             return new CreatedAtRouteResult("GetCategory", new { categoryDto });
         }
 
-        [HttpDelete("{id: int}")]
+        [HttpDelete("{id:int}")]
         public async Task<ActionResult<CategoryDTO>> Delete(int id)
         {
             await _categoryService.RemoveCategory(id);
