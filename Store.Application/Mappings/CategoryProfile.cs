@@ -11,7 +11,7 @@ namespace Store.Application.Mappings
             {
                 Id = category.Id,
                 Name = category.Name,
-                Products = category.Products
+                //Products = category.Products
             };
         }
 
@@ -21,7 +21,7 @@ namespace Store.Application.Mappings
             { 
                 Id = categoryDTO.Id,
                 Name = categoryDTO.Name, 
-                Products = categoryDTO.Products 
+                //Products = categoryDTO.Products 
             };
         }
     }

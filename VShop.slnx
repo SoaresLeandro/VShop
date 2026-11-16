@@ -4,4 +4,5 @@
   <Project Path="Store.CrossCutting/Store.CrossCutting.csproj" />
   <Project Path="Store.Domain/Store.Domain.csproj" />
   <Project Path="Store.Infrastructure/Store.Infrastructure.csproj" />
+  <Project Path="Store.Web/Store.Web.csproj" />
 </Solution>

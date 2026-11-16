@@ -14,7 +14,8 @@ namespace Store.Application.Mappings
                 Description = product.Description,
                 Price = product.Price,
                 Stock = product.Stock,
-                ImageURL = product.ImageURL
+                ImageURL = product.ImageURL,
+                CategoryName = product.Category.Name
             };
         }
 
@@ -27,7 +28,8 @@ namespace Store.Application.Mappings
                 Description = productDTO.Description,
                 Price = productDTO.Price,
                 Stock = productDTO.Stock,
-                ImageURL = productDTO.ImageURL
+                ImageURL = productDTO.ImageURL,
+                CategoryId = productDTO.CategoryId
             };
         }
     }

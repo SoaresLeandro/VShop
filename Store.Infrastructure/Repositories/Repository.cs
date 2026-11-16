@@ -14,12 +14,12 @@ namespace Store.Infrastructure.Repositories
             _appDbContext = appDbContext;
         }
 
-        public async Task<IEnumerable<T>> GetAll()
+        public virtual async Task<IEnumerable<T>> GetAll()
         {
             return await _appDbContext.Set<T>().AsNoTracking().ToListAsync();
         }
 
-        public async Task<T> GetById(int id)
+        public virtual async Task<T> GetById(int id)
         {
             return await _appDbContext.Set<T>().FindAsync(id);
         }

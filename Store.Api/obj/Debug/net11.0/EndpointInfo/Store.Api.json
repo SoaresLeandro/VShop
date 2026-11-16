@@ -504,31 +504,6 @@
   },
   "components": {
     "schemas": {
-      "Category": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "products": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Product"
-            }
-          },
-          "id": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          }
-        }
-      },
       "CategoryDTO": {
         "type": "object",
         "properties": {
@@ -545,74 +520,16 @@
               "null",
               "string"
             ]
-          },
-          "products": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Product"
-            }
-          }
-        }
-      },
-      "Product": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "price": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
-            "format": "double"
-          },
-          "description": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "stock": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int64"
-          },
-          "imageURL": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "category": {
-            "$ref": "#/components/schemas/Category"
-          },
-          "categoryId": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "id": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
           }
         }
       },
       "ProductDTO": {
+        "required": [
+          "name",
+          "price",
+          "description",
+          "stock"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -624,6 +541,8 @@
             "format": "int32"
           },
           "name": {
+            "maxLength": 100,
+            "minLength": 3,
             "type": [
               "null",
               "string"
@@ -638,12 +557,16 @@
             "format": "double"
           },
           "description": {
+            "maxLength": 200,
+            "minLength": 5,
             "type": [
               "null",
               "string"
             ]
           },
           "stock": {
+            "maximum": 9999,
+            "minimum": 1,
             "pattern": "^-?(?:0|[1-9]\\d*)$",
             "type": [
               "integer",
@@ -652,6 +575,12 @@
             "format": "int64"
           },
           "imageURL": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "categoryName": {
             "type": [
               "null",
               "string"
