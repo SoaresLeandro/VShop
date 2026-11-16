@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\Store.Api.csproj": {}
+    "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\Store.Api.csproj": {
+    "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\Store.Api.csproj",
+        "projectUniqueName": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj",
         "projectName": "Store.Api",
-        "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\Store.Api.csproj",
-        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\obj\\",
+        "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj",
+        "packagesPath": "C:\\Users\\lsilva\\.nuget\\packages\\",
+        "outputPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
             "framework": "net11.0",
             "targetAlias": "net11.0",
             "projectReferences": {
-              "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj": {
-                "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj"
+              "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj": {
+                "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj"
               }
             }
           }
@@ -66,9 +66,9 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Swashbuckle.AspNetCore.SwaggerUI": {
+            "Scalar.AspNetCore": {
               "target": "Package",
-              "version": "[11.0.1, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
@@ -536,20 +536,20 @@
         }
       }
     },
-    "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Application\\Store.Application.csproj": {
+    "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Application\\Store.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Application\\Store.Application.csproj",
+        "projectUniqueName": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Application\\Store.Application.csproj",
         "projectName": "Store.Application",
-        "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Application\\Store.Application.csproj",
-        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Application\\obj\\",
+        "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Application\\Store.Application.csproj",
+        "packagesPath": "C:\\Users\\lsilva\\.nuget\\packages\\",
+        "outputPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -565,8 +565,8 @@
             "framework": "net11.0",
             "targetAlias": "net11.0",
             "projectReferences": {
-              "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj": {
-                "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj"
+              "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj": {
+                "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj"
               }
             }
           }
@@ -917,20 +917,20 @@
         }
       }
     },
-    "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj": {
+    "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj",
         "projectName": "Store.CrossCutting",
-        "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\obj\\",
+        "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\lsilva\\.nuget\\packages\\",
+        "outputPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -946,14 +946,14 @@
             "framework": "net11.0",
             "targetAlias": "net11.0",
             "projectReferences": {
-              "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Application\\Store.Application.csproj": {
-                "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Application\\Store.Application.csproj"
+              "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Application\\Store.Application.csproj": {
+                "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Application\\Store.Application.csproj"
               },
-              "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj": {
-                "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj"
+              "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj": {
+                "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj"
               },
-              "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj"
+              "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj": {
+                "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj"
               }
             }
           }
@@ -1304,20 +1304,20 @@
         }
       }
     },
-    "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj": {
+    "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj",
+        "projectUniqueName": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj",
         "projectName": "Store.Domain",
-        "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj",
-        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\obj\\",
+        "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj",
+        "packagesPath": "C:\\Users\\lsilva\\.nuget\\packages\\",
+        "outputPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1681,20 +1681,20 @@
         }
       }
     },
-    "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj": {
+    "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj",
         "projectName": "Store.Infrastructure",
-        "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Infrastructure\\obj\\",
+        "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Infrastructure\\Store.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\lsilva\\.nuget\\packages\\",
+        "outputPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1710,8 +1710,8 @@
             "framework": "net11.0",
             "targetAlias": "net11.0",
             "projectReferences": {
-              "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj": {
-                "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Domain\\Store.Domain.csproj"
+              "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj": {
+                "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Domain\\Store.Domain.csproj"
               }
             }
           }

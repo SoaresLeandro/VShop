@@ -1,3 +1,4 @@
+using Scalar.AspNetCore;
 using Store.CrossCutting.Configuration;
 using System.Text.Json.Serialization;
 
@@ -19,8 +20,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 
-    app.UseSwaggerUI(options => 
-    options.SwaggerEndpoint("/swagger/v1.json", "VShop"));
+    app.MapScalarApiReference();
 }
 
 app.UseHttpsRedirection();

@@ -531,16 +531,16 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/11.0.1": {
+      "Scalar.AspNetCore/3.0.0": {
         "type": "package",
         "compile": {
-          "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "related": ".pdb;.xml"
+          "lib/net11.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "related": ".pdb;.xml"
+          "lib/net11.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
           }
         },
         "frameworkReferences": [
@@ -1930,22 +1930,21 @@
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/11.0.1": {
-      "sha512": "Mu0j015xm7W/Axz6J6bXrh+/qEiyUGQUIGrWWvivv732yO1LtnmyV3zRwWB1dOFvlrU/CWUZqIYe1+hIcsCacg==",
+    "Scalar.AspNetCore/3.0.0": {
+      "sha512": "UvDaK9ZRfGrdOUUcEqZNZ/YnVPcn2C4GiwRxYnsyhsdlTKH9Zqr8/jCOLSNBxhZQ7Te8ldm5a5zbr/reL0WhYg==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/11.0.1",
+      "path": "scalar.aspnetcore/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
-        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
-        "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
-        "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
-        "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
-        "lib/net11.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
-        "package-readme.md",
-        "swashbuckle.aspnetcore.swaggerui.11.0.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.swaggerui.nuspec"
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net11.0/Scalar.AspNetCore.dll",
+        "lib/net11.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.3.0.0.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
       ]
     },
     "System.CodeDom/6.0.0": {
@@ -2153,28 +2152,28 @@
     "net11.0": [
       "Microsoft.AspNetCore.OpenApi >= 11.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
-      "Store.CrossCutting >= 1.0.0",
-      "Swashbuckle.AspNetCore.SwaggerUI >= 11.0.1"
+      "Scalar.AspNetCore >= 3.0.0",
+      "Store.CrossCutting >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leandro\\.nuget\\packages\\": {},
+    "C:\\Users\\lsilva\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\Store.Api.csproj",
+      "projectUniqueName": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj",
       "projectName": "Store.Api",
-      "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\Store.Api.csproj",
-      "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.Api\\obj\\",
+      "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\Store.Api.csproj",
+      "packagesPath": "C:\\Users\\lsilva\\.nuget\\packages\\",
+      "outputPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2190,8 +2189,8 @@
           "framework": "net11.0",
           "targetAlias": "net11.0",
           "projectReferences": {
-            "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj": {
-              "projectPath": "C:\\Users\\Leandro\\Documents\\Projetos\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj"
+            "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj": {
+              "projectPath": "C:\\Leandro\\Lab\\Macoratti\\VShop\\Store.CrossCutting\\Store.CrossCutting.csproj"
             }
           }
         }
@@ -2223,9 +2222,9 @@
             "target": "Package",
             "version": "[9.0.0, )"
           },
-          "Swashbuckle.AspNetCore.SwaggerUI": {
+          "Scalar.AspNetCore": {
             "target": "Package",
-            "version": "[11.0.1, )"
+            "version": "[3.0.0, )"
           }
         },
         "imports": [
