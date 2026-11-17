@@ -1,0 +1,79 @@
+﻿@model ProductViewModel
+
+<h3>Delete Product</h3>
+<h4>Are you sure you want to delete this?</h4>
+
+<div>
+    <hr />
+
+    <div class="card theme-inverse">
+        <div class="card-header">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-2">
+                    <p style="font-weight: bold">@Html.DisplayNameFor(model => model.Name)</p>
+                </div>
+                <div class="col-sm-2">
+                    @Html.DisplayFor(model => model.Name)
+                </div>
+             </div>
+
+            <div class="row">
+                <div class="col-sm-2">                    
+                    <p style="font-weight: bold">@Html.DisplayNameFor(model => model.CategoryName)</p>
+                </div>
+                <div class="col-sm-2">
+                    @Html.DisplayFor(model => model.CategoryName)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">                    
+                    <p style="font-weight: bold">@Html.DisplayNameFor(model => model.Description)</p>
+                </div>
+                <div class="col-sm-2">
+                    @Html.DisplayFor(model => model.Description)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <p style="font-weight: bold">@Html.DisplayNameFor(model => model.Price)</p>                    
+                </div>
+                <div class="col-sm-2">
+                    @Html.DisplayFor(model => model.Price)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">                    
+                    <p style="font-weight: bold">@Html.DisplayNameFor(model => model.Stock)</p>
+                </div>
+                <div class="col-sm-2">
+                    @Html.DisplayFor(model => model.Stock)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <p style="font-weight: bold">@Html.DisplayNameFor(model => model.ImageURL)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <img src="~/Images/@Model.ImageURL" />
+                </div>
+            </div>
+           
+            <form asp-action="Delete">
+                <input asp-for="Id" type="hidden" />
+                <div class="form-group pt-2">
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+                    <a asp-action="Index" class="btn btn-solid btn-primary">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

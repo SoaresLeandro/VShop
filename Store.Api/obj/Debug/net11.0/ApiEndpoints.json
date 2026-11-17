@@ -197,6 +197,32 @@
   },
   {
     "ContainingType": "Store.Api.Controllers.ProductsController",
+    "Method": "Put",
+    "RelativePath": "api/Products",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productDTO",
+        "Type": "Store.Application.DTOs.ProductDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Store.Application.DTOs.ProductDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Store.Api.Controllers.ProductsController",
     "Method": "Get",
     "RelativePath": "api/Products/{id}",
     "HttpMethod": "GET",
@@ -221,37 +247,6 @@
       }
     ],
     "EndpointName": "GetProduct"
-  },
-  {
-    "ContainingType": "Store.Api.Controllers.ProductsController",
-    "Method": "Put",
-    "RelativePath": "api/Products/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "productDTO",
-        "Type": "Store.Application.DTOs.ProductDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Store.Application.DTOs.ProductDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "Store.Api.Controllers.ProductsController",

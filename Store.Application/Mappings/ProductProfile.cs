@@ -15,7 +15,8 @@ namespace Store.Application.Mappings
                 Price = product.Price,
                 Stock = product.Stock,
                 ImageURL = product.ImageURL,
-                CategoryName = product.Category.Name
+                CategoryId = product.CategoryId,
+                CategoryName = product.Category?.Name
             };
         }
 

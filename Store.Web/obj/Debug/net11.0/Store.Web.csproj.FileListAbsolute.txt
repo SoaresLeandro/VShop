@@ -31,7 +31,7 @@ C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\scopedcss\Views\Share
 C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\scopedcss\bundle\Store.Web.styles.css
 C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\scopedcss\projectbundle\Store.Web.bundle.scp.css
 C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\compressed\a5maxxa1vt-{0}-tchfgznwy8-tchfgznwy8.gz
-C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\compressed\ocs8hc07rs-{0}-88n88r7g7t-88n88r7g7t.gz
+C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\compressed\ocs8hc07rs-{0}-vq7pzdktvs-vq7pzdktvs.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\compressed\4cbhkhe3ie-{0}-gmtxue3pxl-gmtxue3pxl.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\compressed\hmmonyptze-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Web\obj\Debug\net11.0\compressed\ghd6bkpsih-{0}-xtxxf3hu2r-xtxxf3hu2r.gz

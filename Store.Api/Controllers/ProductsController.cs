@@ -51,12 +51,9 @@ namespace Store.Api.Controllers
             return new CreatedAtRouteResult("GetProduct", new { productDTO });
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<ProductDTO>> Put(int id, ProductDTO productDTO)
+        [HttpPut]
+        public async Task<ActionResult<ProductDTO>> Put(ProductDTO productDTO)
         {
-            if (!productDTO.Id.Equals(id))
-                return BadRequest();
-
             if (productDTO is null)
                 return BadRequest("Invalid Data");
 

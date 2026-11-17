@@ -8,7 +8,7 @@ namespace Store.Web.Services
     public class ProductService : IProductService
     {
         private readonly IHttpClientFactory _clientFactory;
-        private const string apiEndpoint = "/api/products/";
+        private const string apiEndpoint = "/api/products";
         private readonly JsonSerializerOptions _jsonOptions;
         private ProductViewModel productViewModel;
         private IEnumerable<ProductViewModel> productsViewModel;
