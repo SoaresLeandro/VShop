@@ -9,6 +9,10 @@
       {
         "Path": "Store.Web\\Store.Web.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "Store.IdentityServer\\Store.IdentityServer.csproj",
+        "Action": "Start"
       }
     ]
   }

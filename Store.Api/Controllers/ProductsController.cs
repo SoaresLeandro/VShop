@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Store.Api.Roles;
 using Store.Application.DTOs;
 using Store.Application.Services.Interfaces;
 
@@ -16,6 +18,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ProductDTO>>> Get()
         {
             var productsDto = await _productService.GetProducts();
@@ -27,6 +30,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpGet("{id:int}", Name = "GetProduct")]
+        [Authorize]
         public async Task<ActionResult<ProductDTO>> Get(int id)
         {
             var productDTO = await _productService.GetProductById(id);
@@ -38,6 +42,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<ProductDTO>> Post(ProductDTO productDTO)
         {
             if (productDTO is null)
@@ -52,6 +57,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<ActionResult<ProductDTO>> Put(ProductDTO productDTO)
         {
             if (productDTO is null)
@@ -66,6 +72,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(Roles = Role.Admin)]
         public async Task<ActionResult<ProductDTO>> Delete(int id)
         {
             await _productService.RemoveProduct(id);

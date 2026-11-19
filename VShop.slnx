@@ -3,6 +3,7 @@
   <Project Path="Store.Application/Store.Application.csproj" />
   <Project Path="Store.CrossCutting/Store.CrossCutting.csproj" />
   <Project Path="Store.Domain/Store.Domain.csproj" />
+  <Project Path="Store.IdentityServer/Store.IdentityServer.csproj" Id="50e83fd2-1493-4115-92ea-90ff2ded2eec" />
   <Project Path="Store.Infrastructure/Store.Infrastructure.csproj" />
   <Project Path="Store.Web/Store.Web.csproj" />
 </Solution>

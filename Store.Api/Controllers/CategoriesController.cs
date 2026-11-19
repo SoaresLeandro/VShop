@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Store.Api.Roles;
 using Store.Application.DTOs;
 using Store.Application.Services.Interfaces;
 
@@ -16,6 +18,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<CategoryDTO>>> Get()
         {
             var categoriesDto = await _categoryService.GetCategories();
@@ -27,6 +30,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpGet("products")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<CategoryDTO>>> GetWithProducts()
         {
             var categoriesDto = await _categoryService.GetCategoriesWithProducts();
@@ -38,6 +42,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpGet("{id:int}", Name = "GetCategory")]
+        [Authorize]
         public async Task<ActionResult<CategoryDTO>> Get(int id)
         {
             var categoryDto = await _categoryService.GetCategoryById(id);
@@ -49,6 +54,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<CategoryDTO>> Post(CategoryDTO categoryDTO)
         {
             if (categoryDTO is null)
@@ -63,6 +69,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpPut("{id:int}")]
+        [Authorize]
         public async Task<ActionResult<CategoryDTO>> Put(int id, CategoryDTO categoryDTO)
         {
             if (!categoryDTO.Id.Equals(id))
@@ -80,6 +87,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(Roles = Role.Admin)]
         public async Task<ActionResult<CategoryDTO>> Delete(int id)
         {
             await _categoryService.RemoveCategory(id);

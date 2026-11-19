@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Store.Web.Models;
+using Store.Web.Roles;
 using Store.Web.Services.Contracts;
 
 namespace Store.Web.Controllers
@@ -17,6 +19,7 @@ namespace Store.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ProductViewModel>>> Index()
         {
             var products = await _productService.GetAllProducts();
@@ -28,6 +31,7 @@ namespace Store.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult> Create()
         {
             ViewBag.CategoryId = new SelectList(await _categoryService.GetAllCategories(), 
@@ -39,6 +43,7 @@ namespace Store.Web.Controllers
 
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult> Create(ProductViewModel productViewModel)
         {
             if (ModelState.IsValid)
@@ -56,6 +61,7 @@ namespace Store.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult> Update(int id)
         {
             ViewBag.CategoryId = new SelectList(await _categoryService.GetAllCategories(),
@@ -70,6 +76,7 @@ namespace Store.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult> Update(ProductViewModel productViewModel)
         {
             if(ModelState.IsValid)
@@ -83,6 +90,7 @@ namespace Store.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<ProductViewModel>> Delete(int id)
         {
             var productViewModel = await _productService.GetProductById(id);
@@ -93,6 +101,7 @@ namespace Store.Web.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
+        [Authorize(Roles = Role.Admin)]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
             var result = await _productService.DeleteProductbyId(id);
