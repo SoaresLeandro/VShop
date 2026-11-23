@@ -154,6 +154,7 @@ C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Store.Api.runtimeconf
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Store.Api.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Store.Api.pdb
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Humanizer.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.Build.Locator.dll
@@ -168,6 +169,12 @@ C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.EntityFrame
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.Extensions.DependencyModel.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Logging.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Protocols.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Tokens.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.OpenApi.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Mono.TextTemplating.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\MySqlConnector.dll
@@ -179,6 +186,7 @@ C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\System.Composition.Co
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\System.Composition.Hosting.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\System.Composition.Runtime.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\System.Composition.TypedParts.dll
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -273,7 +281,7 @@ C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\jsmodules\jsmodules.b
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\scopedcss\scopedcss.cache
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\scopedcss\bundle\Store.Api.styles.css
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\6eiem8wqjk-{0}-tchfgznwy8-tchfgznwy8.gz
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\4u2mf0fsfj-{0}-xn1g8xw6vr-xn1g8xw6vr.gz
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\4u2mf0fsfj-{0}-n68dn9x0zj-n68dn9x0zj.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\3jaidz66t4-{0}-v1vy2to33n-v1vy2to33n.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\compressed\418535rxj1-{0}-ysew0n4kjn-ysew0n4kjn.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\staticwebassets.build.json
@@ -281,18 +289,10 @@ C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\staticwebassets.build
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\staticwebassets.development.json
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\staticwebassets.build.endpoints.json
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\swae.build.ex.cache
+C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\staticwebassets.upToDateCheck.txt
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\Store.Api.csproj.Up2Date
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\Store.Api.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\refint\Store.Api.dll
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\Store.Api.pdb
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\Store.Api.genruntimeconfig.cache
 C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\ref\Store.Api.dll
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\obj\Debug\net11.0\staticwebassets.upToDateCheck.txt
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Logging.dll
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Protocols.dll
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\Microsoft.IdentityModel.Tokens.dll
-C:\Leandro\Lab\Macoratti\VShop\Store.Api\bin\Debug\net11.0\System.IdentityModel.Tokens.Jwt.dll
