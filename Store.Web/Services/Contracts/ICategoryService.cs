@@ -4,10 +4,10 @@ namespace Store.Web.Services.Contracts
 {
     public interface ICategoryService
     {
-        Task<IEnumerable<CategoryViewModel>> GetAllCategories();
-        Task<CategoryViewModel> GetCategoryById(int id);
-        Task<CategoryViewModel> CreateCategory(CategoryViewModel categoryViewModel);
-        Task<CategoryViewModel> UpdateCategory(CategoryViewModel categoryViewModel);
-        Task<bool> DeleteCategory(int id);
+        Task<IEnumerable<CategoryViewModel>> GetAllCategories(string token);
+        Task<CategoryViewModel> GetCategoryById(int id, string token);
+        Task<CategoryViewModel> CreateCategory(CategoryViewModel categoryViewModel, string token);
+        Task<CategoryViewModel> UpdateCategory(CategoryViewModel categoryViewModel, string token);
+        Task<bool> DeleteCategory(int id, string token);
     }
 }

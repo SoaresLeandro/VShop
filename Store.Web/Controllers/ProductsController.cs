@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Store.Web.Models;
@@ -22,7 +23,9 @@ namespace Store.Web.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<ProductViewModel>>> Index()
         {
-            var products = await _productService.GetAllProducts();
+            var token = await GetAccessToken();
+
+            var products = await _productService.GetAllProducts(token);
 
             if (products is null)
                 return View("Error");
@@ -34,7 +37,9 @@ namespace Store.Web.Controllers
         [Authorize]
         public async Task<ActionResult> Create()
         {
-            ViewBag.CategoryId = new SelectList(await _categoryService.GetAllCategories(), 
+            var token = await GetAccessToken();
+
+            ViewBag.CategoryId = new SelectList(await _categoryService.GetAllCategories(token), 
                                                 "Id", 
                                                 "Name");
 
@@ -46,15 +51,16 @@ namespace Store.Web.Controllers
         [Authorize]
         public async Task<ActionResult> Create(ProductViewModel productViewModel)
         {
+            var token = await GetAccessToken();
             if (ModelState.IsValid)
             {
-                var productCreated = await _productService.CreateProduct(productViewModel);
+                var productCreated = await _productService.CreateProduct(productViewModel, token);
 
                 if (productCreated is not null)
                     return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.CategoryId = new SelectList(await _categoryService.GetAllCategories(),
+            ViewBag.CategoryId = new SelectList(await _categoryService.GetAllCategories(token),
                                                 "Id",
                                                 "Name");
             return View(productViewModel);
@@ -64,11 +70,13 @@ namespace Store.Web.Controllers
         [Authorize]
         public async Task<ActionResult> Update(int id)
         {
-            ViewBag.CategoryId = new SelectList(await _categoryService.GetAllCategories(),
+            var token = await GetAccessToken();
+
+            ViewBag.CategoryId = new SelectList(await _categoryService.GetAllCategories(token),
                                                 "Id",
                                                 "Name");
 
-            var product = await _productService.GetProductById(id);
+            var product = await _productService.GetProductById(id, token);
 
             if(product == null) return View("Error");
 
@@ -81,7 +89,9 @@ namespace Store.Web.Controllers
         {
             if(ModelState.IsValid)
             {
-                var productUpdated = await _productService.UpdateProduct(productViewModel);
+                string token = await GetAccessToken();
+
+                var productUpdated = await _productService.UpdateProduct(productViewModel, token);
 
                 if(productUpdated is not null) return RedirectToAction(nameof(Index));
             }
@@ -93,7 +103,9 @@ namespace Store.Web.Controllers
         [Authorize]
         public async Task<ActionResult<ProductViewModel>> Delete(int id)
         {
-            var productViewModel = await _productService.GetProductById(id);
+            string token = await GetAccessToken();
+
+            var productViewModel = await _productService.GetProductById(id, token);
 
             if (productViewModel is null) return View("Error");
 
@@ -104,11 +116,15 @@ namespace Store.Web.Controllers
         [Authorize(Roles = Role.Admin)]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            var result = await _productService.DeleteProductbyId(id);
+            string token = await GetAccessToken();
+
+            var result = await _productService.DeleteProductbyId(id, token);
 
             if (result == false) return View("Error");
 
             return RedirectToAction("Index");
         }
+
+        private async Task<string> GetAccessToken() => await HttpContext.GetTokenAsync("access_token");
     }
 }

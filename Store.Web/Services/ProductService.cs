@@ -1,5 +1,6 @@
 ﻿using Store.Web.Models;
 using Store.Web.Services.Contracts;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
@@ -19,9 +20,10 @@ namespace Store.Web.Services
             _jsonOptions = new JsonSerializerOptions{ PropertyNameCaseInsensitive = true };
         }
 
-        public async Task<IEnumerable<ProductViewModel>> GetAllProducts()
+        public async Task<IEnumerable<ProductViewModel>> GetAllProducts(string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             using (var response = await client.GetAsync(apiEndpoint))
             {
@@ -41,9 +43,10 @@ namespace Store.Web.Services
             return productsViewModel;
         }
 
-        public async Task<ProductViewModel> GetProductById(int id)
+        public async Task<ProductViewModel> GetProductById(int id, string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             using (var response = await client.GetAsync($"{apiEndpoint}/{id}"))
             {
@@ -62,9 +65,10 @@ namespace Store.Web.Services
             return productViewModel;
         }
 
-        public async Task<ProductViewModel> CreateProduct(ProductViewModel productViewModel)
+        public async Task<ProductViewModel> CreateProduct(ProductViewModel productViewModel, string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             StringContent content = new StringContent(JsonSerializer.Serialize(productViewModel), 
                                                     Encoding.UTF8,
@@ -87,9 +91,11 @@ namespace Store.Web.Services
             return productViewModel;
         }
 
-        public async Task<ProductViewModel> UpdateProduct(ProductViewModel productViewModel)
+        public async Task<ProductViewModel> UpdateProduct(ProductViewModel productViewModel, string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
             ProductViewModel productUpdated = new ProductViewModel();
 
             using (var response = await client.PutAsJsonAsync(apiEndpoint, productViewModel))
@@ -109,9 +115,10 @@ namespace Store.Web.Services
             return productUpdated;
         }
 
-        public async Task<bool> DeleteProductbyId(int id)
+        public async Task<bool> DeleteProductbyId(int id, string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             using (var response = await client.DeleteAsync($"{apiEndpoint}/{id}"))
                 return response.IsSuccessStatusCode;

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Store.Web.Models;
 using Store.Web.Services.Contracts;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
@@ -20,9 +21,10 @@ namespace Store.Web.Services
             _jsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         }
 
-        public async Task<IEnumerable<CategoryViewModel>> GetAllCategories()
+        public async Task<IEnumerable<CategoryViewModel>> GetAllCategories(string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             using (var response = await client.GetAsync(_apiEndpoint))
             {
@@ -42,9 +44,10 @@ namespace Store.Web.Services
             return _categoriesViewModel;
         }
 
-        public async Task<CategoryViewModel> GetCategoryById(int id)
+        public async Task<CategoryViewModel> GetCategoryById(int id, string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             using (var response = await client.GetAsync(_apiEndpoint + id))
             {
@@ -63,9 +66,10 @@ namespace Store.Web.Services
             return _categoryViewModel;
         }
 
-        public async Task<CategoryViewModel> CreateCategory(CategoryViewModel categoryViewModel)
+        public async Task<CategoryViewModel> CreateCategory(CategoryViewModel categoryViewModel, string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             StringContent content = new StringContent(JsonSerializer.Serialize(categoryViewModel), Encoding.UTF8, "application/json");
 
@@ -86,9 +90,10 @@ namespace Store.Web.Services
             return _categoryViewModel;
         }
 
-        public async Task<CategoryViewModel> UpdateCategory(CategoryViewModel categoryViewModel)
+        public async Task<CategoryViewModel> UpdateCategory(CategoryViewModel categoryViewModel, string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             CategoryViewModel categoryUpdated = new CategoryViewModel();
 
@@ -109,9 +114,10 @@ namespace Store.Web.Services
             return categoryUpdated;
         }
 
-        public async Task<bool> DeleteCategory(int id)
+        public async Task<bool> DeleteCategory(int id, string token)
         {
             var client = _clientFactory.CreateClient("ProductApi");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             using (var response = await client.DeleteAsync(_apiEndpoint + id))
                 return response.IsSuccessStatusCode;

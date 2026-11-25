@@ -1,17 +1,17 @@
-﻿<ul>
-    @if(User.Identity.IsAuthenticated)
-    {
-        <li class="nav-item">
-            <a class="nav-link">Olá, @User.Identity.Name</a>
-        </li>
-        <li>
-            <a class="nav-link" asp-action="Logout" asp-controller="Home">Logout</a>
-        </li>
-    }
-    else
-    {
-        <li class="nav-item">
-            <a class="nav-link" asp-action="Login" asp-controller="Home">Login</a>
-        </li>
-    }
-</ul>
+﻿@if(User.Identity.IsAuthenticated)
+{
+    <li class="nav-item">
+        <a class="nav-link text-white">Olá, @User.Identity.Name</a>
+    </li>
+    <li>
+        <a class="nav-link text-white" asp-action="Logout" asp-controller="Home">
+            <span class="fas fa-close"> Sair</span>
+        </a>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-white" asp-action="Login" asp-controller="Home">Login</a>
+    </li>
+}
