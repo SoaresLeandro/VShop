@@ -18,7 +18,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         public async Task<ActionResult<IEnumerable<ProductDTO>>> Get()
         {
             var productsDto = await _productService.GetProducts();
@@ -30,7 +30,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpGet("{id:int}", Name = "GetProduct")]
-        [Authorize]
+        //[Authorize]
         public async Task<ActionResult<ProductDTO>> Get(int id)
         {
             var productDTO = await _productService.GetProductById(id);
@@ -42,7 +42,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = Role.Admin)]
         public async Task<ActionResult<ProductDTO>> Post(ProductDTO productDTO)
         {
             if (productDTO is null)
@@ -57,7 +57,7 @@ namespace Store.Api.Controllers
         }
 
         [HttpPut]
-        [Authorize]
+        [Authorize(Roles = Role.Admin)]
         public async Task<ActionResult<ProductDTO>> Put(ProductDTO productDTO)
         {
             if (productDTO is null)

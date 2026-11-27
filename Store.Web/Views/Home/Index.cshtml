@@ -1,9 +1,32 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<ProductViewModel>
 
-<div class="text-center">
-    <div border="1px solid green">
-        <h1 class="display-4" style="color: red">VShop</h1>
+<div class="container" style="border: 1px solid yellow">
+    <div class="row justify-content-around">
+        @foreach (var product in Model)
+        {
+            <div class="col-sm-4">
+                <a href="/Home/ProductDetails/@product.Id">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            @* <p class="card-text">@product.Description</p>
+                            <span style="font-weight: bold">Categoria: </span> @product.CategoryName *@
+                        </div>
+                        <div class="list-group list-group-flush">
+                        
+                            <p class="list-group-item">
+                                <span style="font-weight: bold">Preço: </span>
+                                @product.Price.ToString("C")
+                            </p>
+                        </div>
+                        @* <div class="card-body">
+                            <a href="#" class="btn btn-primary card-link">Details</a>
+                            <a href="#" class="btn btn-success card-link">Add to cart</a>
+                        </div> *@
+                    </div>
+                </a>
+            </div>
+        }
     </div>
 </div>

@@ -8,6 +8,7 @@ using Store.Web.Services.Contracts;
 
 namespace Store.Web.Controllers
 {
+    [Authorize(Roles = Role.Admin)]
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
@@ -20,7 +21,6 @@ namespace Store.Web.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public async Task<ActionResult<IEnumerable<ProductViewModel>>> Index()
         {
             var token = await GetAccessToken();
@@ -34,7 +34,6 @@ namespace Store.Web.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public async Task<ActionResult> Create()
         {
             var token = await GetAccessToken();
@@ -48,7 +47,6 @@ namespace Store.Web.Controllers
 
 
         [HttpPost]
-        [Authorize]
         public async Task<ActionResult> Create(ProductViewModel productViewModel)
         {
             var token = await GetAccessToken();
@@ -67,7 +65,6 @@ namespace Store.Web.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public async Task<ActionResult> Update(int id)
         {
             var token = await GetAccessToken();
@@ -84,7 +81,6 @@ namespace Store.Web.Controllers
         }
 
         [HttpPost]
-        [Authorize]
         public async Task<ActionResult> Update(ProductViewModel productViewModel)
         {
             if(ModelState.IsValid)
@@ -100,7 +96,6 @@ namespace Store.Web.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public async Task<ActionResult<ProductViewModel>> Delete(int id)
         {
             string token = await GetAccessToken();
@@ -113,7 +108,6 @@ namespace Store.Web.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
-        [Authorize(Roles = Role.Admin)]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
             string token = await GetAccessToken();

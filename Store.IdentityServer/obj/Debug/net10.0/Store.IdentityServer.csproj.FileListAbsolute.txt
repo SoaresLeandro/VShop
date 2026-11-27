@@ -203,7 +203,7 @@ C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed
 C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed\v0zgfp0y55-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed\yfc7ypekbg-{0}-mlv21k5csn-mlv21k5csn.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed\g6vwg423bt-{0}-tchfgznwy8-tchfgznwy8.gz
-C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed\qi4iwuzz56-{0}-ldoi41s7pr-ldoi41s7pr.gz
+C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed\qi4iwuzz56-{0}-uetnmmma5o-uetnmmma5o.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed\mcsj7c3e9p-{0}-cqkxo8zlx7-cqkxo8zlx7.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed\b60pba9s5j-{0}-qf3xwza7k1-qf3xwza7k1.gz
 C:\Leandro\Lab\Macoratti\VShop\Store.IdentityServer\obj\Debug\net10.0\compressed\pa93kmm724-{0}-0zglhag6zb-0zglhag6zb.gz

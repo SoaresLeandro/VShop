@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="Store.Api/Store.Api.csproj" />
   <Project Path="Store.Application/Store.Application.csproj" />
+  <Project Path="Store.CartApi/Store.CartApi.csproj" Id="6566194d-699e-41b2-a454-8bc242a89f0c" />
   <Project Path="Store.CrossCutting/Store.CrossCutting.csproj" />
   <Project Path="Store.Domain/Store.Domain.csproj" />
   <Project Path="Store.IdentityServer/Store.IdentityServer.csproj" Id="50e83fd2-1493-4115-92ea-90ff2ded2eec" />
